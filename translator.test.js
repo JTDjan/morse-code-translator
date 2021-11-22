@@ -1,10 +1,10 @@
 // imports of functions & global jest 
-import { translate} from "./transalor.js"
+import { translate, englishWord} from "./transalor.js"
 import { expect , it} from "@jest/globals"
 
 // test that should translate all the letters of the alphabet 
 
-describe ("Alphabet should translate to mose code", () => {
+xdescribe ("Alphabet should translate to mose code", () => {
 
 
   it (" Should translate the letter a to . -", () => {
@@ -33,3 +33,10 @@ describe ("Alphabet should translate to mose code", () => {
   });
 
 })
+
+
+// test for array of
+it("It should take a word & convert it to morse code",()=>{
+  let result = englishWord("hello");
+  expect(result).toBe("......-...-..---");
+} )
