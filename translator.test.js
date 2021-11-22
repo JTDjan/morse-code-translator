@@ -35,8 +35,8 @@ xdescribe ("Alphabet should translate to mose code", () => {
 })
 
 
-// test for array of
+// test for translating english word
 it("It should take a word & convert it to morse code",()=>{
-  let result = englishWord("hello");
-  expect(result).toBe("......-...-..---");
+  let result = englishWord("hello j");
+  expect(result).toBe("......-...-..--- / .---");
 } )

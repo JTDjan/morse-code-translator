@@ -218,6 +218,10 @@ export const translate =(letter) => {
          case "z": 
           return "--..";
           break;
+
+          case " ": 
+          return " / ";
+          break;
         }
         
       })
@@ -227,7 +231,7 @@ export const translate =(letter) => {
 
    
   }
-console.log(englishWord("Jake"));
+
 
 // each letter is than translated to morse code using translate. 
 
