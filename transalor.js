@@ -103,5 +103,7 @@ export const translate =(letter) => {
     case "z": 
      return "--..";
      break;
+
+  
   }
 } 
