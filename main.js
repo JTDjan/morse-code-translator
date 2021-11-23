@@ -15,7 +15,11 @@ const userBtn = document.querySelector ("#button")
 
 
  userBtn.addEventListener ("click", () => {
+let inputValue = userInput.value
+ let result = englishWord(inputValue)
 
+  // to get the function to display 
+  morseOutput.innerHTML = result
 })
 
 
