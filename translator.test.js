@@ -4,10 +4,10 @@ import { expect , it} from "@jest/globals"
 
 // test that should translate all the letters of the alphabet 
 
-xdescribe ("Alphabet should translate to mose code", () => {
+describe ("Alphabet should translate to mose code", () => {
 
 
-  it (" Should translate the letter a to . -", () => {
+  it ("Should translate the letter a to . -", () => {
     const result = translate("a")
     expect(result).toBe(".-")
   });
@@ -35,8 +35,19 @@ xdescribe ("Alphabet should translate to mose code", () => {
 })
 
 
-// test for translating english word
-it("It should take a word & convert it to morse code",()=>{
-  let result = englishWord("hello j");
-  expect(result).toBe("......-...-..--- / .---");
-} )
+
+describe ("English words should translate to mose code", () => {
+  
+  // test for translating english word
+  it("It should take the words hello j & convert it to morse code",()=>{
+    let result = englishWord("hello j");
+    expect(result).toBe("......-...-..--- / .---");
+  } )
+  
+  it("It should take a words morning show & convert it to morse code",()=>{
+    let result = englishWord("morning show");
+    expect(result).toBe("-----.-.-...-.--. / .......---.--");
+  })
+
+
+})
