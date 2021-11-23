@@ -35,7 +35,7 @@ describe ("Alphabet should translate to mose code", () => {
 })
 
 
-
+// Test that translate word & words with spaces.
 describe ("English words should translate to mose code", () => {
   
   // test for translating english word
