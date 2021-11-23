@@ -1,0 +1,28 @@
+body {
+  font-family: 'Poppins';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( 150deg, rgba(146, 130, 130), yellow, rgb(146, 130, 130)) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  text-align: center;
+  
+  #container {
+    background: #aaab8c;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 7%; 
+
+    #btnCon {
+      display: flex;
+      justify-content: center;
+      gap: 7px;
+      margin-top: 1%;
+    }
+  }
+  
+}
